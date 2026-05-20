@@ -1,0 +1,74 @@
+# =========================================================
+# WordPress .gitignore — track custom theme/plugin code only
+# Project: web_ceo
+# =========================================================
+
+# ----- WordPress core (managed by WP itself) -----
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# ----- Secrets & local config -----
+wp-config.php
+wp-config-local.php
+.htaccess
+*.log
+*.sql
+*.sql.gz
+
+# ----- Uploads (user-generated media) -----
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/backup*/
+/wp-content/cache/
+/wp-content/et-cache/
+/wp-content/wflogs/
+/wp-content/advanced-cache.php
+/wp-content/object-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/db.php
+/wp-content/debug.log
+
+# ----- Ignore ALL plugins/themes by default, then whitelist below -----
+/wp-content/plugins/*
+/wp-content/themes/*
+
+# ----- Whitelist: keep CUSTOM theme(s) -----
+!/wp-content/themes/divi-child/
+
+# ----- Whitelist: add any custom plugins below -----
+# Example:
+# !/wp-content/plugins/web-ceo-custom/
+
+# ----- Keep wp-content top-level index.php for safety -----
+!/wp-content/index.php
+!/wp-content/plugins/index.php
+!/wp-content/themes/index.php
+
+# ----- OS / Editor noise -----
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ----- Build / dependency folders inside custom theme -----
+node_modules/
+vendor/
+*.lock
+npm-debug.log
+yarn-error.log
+
+# ----- Compiled / minified output (uncomment if using build tools) -----
+# /wp-content/themes/divi-child/dist/
+# /wp-content/themes/divi-child/build/
