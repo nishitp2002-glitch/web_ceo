@@ -7,3 +7,8 @@ Author: Divi Extended
 Template: Divi
 */
 @import url("../Divi/style.css");
+
+
+.{
+    color{#fff;}
+}
